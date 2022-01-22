@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Neonderthaw&family=Playfair+Display&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Flex Box containing type writer stuff*/
+.typewriter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: #EEEEEE;
+    font-family: "poppins", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .static-txt {
+    color: #393E46;
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+    line-height: 4.5vw;
+    height: 4.5vw;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: #00ADB5;
+    font-size: 3vw;
+    font-weight: 500;
+    top: 0;
+    position: relative;
+    animation: slide 18s steps(6) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -27vw;
+    }
+}
+
+.dynamic-txts li {
+    position: relative;
+}
+
+.dynamic-txts li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #EEEEEE;
+    border-left: 0.15vw solid #00ADB5;
+    animation: typing 3s steps(6)
+    infinite;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 1.5vw);
+    }
+    100% {
+        left: 0;
+    }
+}
