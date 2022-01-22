@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Neonderthaw&family=Playfair+Display&family=Poppins&display=swap');
+Neonderthaw
 
 * {
     margin: 0;
@@ -7,16 +7,22 @@
     font-family: "poppins", sans-serif;
 }
 
-body {
-    min-height: 100vh;
+
+/*Flex Box containing type writer stuff*/
+.typewriter {
+    min-height: 92vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #EEEEEE;
+    justify-content: center;
+    font-family: "poppins", sans-serif;
 }
 
 .wrapper {
     display: flex;
+    background-color: #EEEEEE;
+    border: red solid 2px;
+    border-radius: 60px;
+    padding: 2vw;
 }
 
 .wrapper .static-txt {
@@ -33,7 +39,7 @@ body {
 }
 
 #name {
-    font-family: 'neonderthaw', cursive;
+    font-family: 'Neonderthaw', cursive;
     font-style: bold;
     font-weight: 600;
 }
