@@ -53,7 +53,7 @@ nav a:hover:not(.activepage) {
   
 /* indicate active page on nav */
 nav a.activepage {
-    color: #00ADB5;
+    color: #00cbd6;
   }
 
 /*Burger Styling*/

@@ -15,12 +15,14 @@ Neonderthaw
     align-items: center;
     justify-content: center;
     font-family: "poppins", sans-serif;
+    background-image: url(/images/stars.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .wrapper {
     display: flex;
     background-color: #EEEEEE;
-    border: red solid 2px;
     border-radius: 60px;
     padding: 2vw;
 }
@@ -42,11 +44,12 @@ Neonderthaw
     font-family: 'Neonderthaw', cursive;
     font-style: bold;
     font-weight: 600;
+    color: #0020b1;
 }
 
 .dynamic-txts li {
     list-style: none;
-    color: #00ADB5;
+    color: #002ba1;
     font-size: 3vw;
     font-weight: 500;
     top: 0;
@@ -71,7 +74,7 @@ Neonderthaw
     height: 100%;
     width: 100%;
     background-color: #EEEEEE;
-    border-left: 0.15vw solid #00ADB5;
+    border-left: 0.15vw solid #002ba1;
     animation: typing 3s steps(12)
     infinite;
 }
