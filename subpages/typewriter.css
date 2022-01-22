@@ -6,16 +6,6 @@
     box-sizing: border-box;
 }
 
-/*Flex Box containing type writer stuff*/
-.typewriter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    background-color: #EEEEEE;
-    font-family: "poppins", sans-serif;
-}
-
 .wrapper {
     display: flex;
     flex-direction: row;
