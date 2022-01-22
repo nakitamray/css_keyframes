@@ -32,18 +32,25 @@ body {
     overflow: hidden;
 }
 
+#name {
+    font-family: 'neonderthaw', cursive;
+    font-style: bold;
+    font-weight: 600;
+}
+
 .dynamic-txts li {
     list-style: none;
+    color: #00ADB5;
     font-size: 3vw;
     font-weight: 500;
     top: 0;
     position: relative;
-    animation: slide 39s steps(13) infinite;
+    animation: slide 18s steps(6) infinite;
 }
 
 @keyframes slide {
     100% {
-        top: -58.5vw;
+        top: -27vw;
     }
 }
 
@@ -58,8 +65,8 @@ body {
     height: 100%;
     width: 100%;
     background-color: #EEEEEE;
-    border-left: 0.15vw solid #444444;
-    animation: typing 3s steps(5)
+    border-left: 0.15vw solid #00ADB5;
+    animation: typing 3s steps(12)
     infinite;
 }
 
@@ -71,16 +78,4 @@ body {
     100% {
         left: 0;
     }
-}
-
-.green {
-    color: #008132;
-}
-
-.blue {
-    color: #00ADB5;
-}
-
-.black {
-    color: #002d30;
 }
