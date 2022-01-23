@@ -92,7 +92,9 @@ nav a.activepage {
         background: #EEEEEE;
       }
       
-      a:before {
+      /* Animate Links */
+
+      /* a:before {
         left: -2.5px;
       }
       a:after {
@@ -111,7 +113,7 @@ nav a.activepage {
         background: transparent;
         width: 100%;
         transition: 0s;
-      }
+      } */
 
 }
 
