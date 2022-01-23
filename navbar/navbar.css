@@ -77,44 +77,6 @@ nav a.activepage {
     .nav-links {
         width: 40%;
     }
-
-    nav a:hover:not(.activepage) {
-        text-decoration: none;
-      }
-
-    a:before, a:after {
-        content: '';
-        position: absolute;
-        width: 0%;
-        height: 1px;
-        top: 50%;
-        margin-top: -0.5px;
-        background: #EEEEEE;
-      }
-      
-      /* Animate Links */
-
-      a:before {
-        left: -2.5px;
-      }
-      a:after {
-        right: 2.5px;
-        background: #EEEEEE;
-        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-      }
-      
-      a:hover:before {
-        background: #EEEEEE;
-        width: 100%;
-        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-      }
-      
-      a:hover:after {
-        background: transparent;
-        width: 100%;
-        transition: 0s;
-      }
-
 }
 
 /* Hamburger Menu when the page vw is decreased */
@@ -129,7 +91,7 @@ nav a.activepage {
         height: 92vh;
         top: 8vh;
         background-color: #393E46;
-        opacity: 0.95;
+        opacity: 0.8;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -182,3 +144,28 @@ nav a.activepage {
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
+a {
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(208, 238, 255);
+    height: 0.10vw;
+    width: 100%;
+    left: 0;
+    width: 0;
+    bottom: -0.5vw;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #00cbd6;
+}
+
+a:hover:after{
+    width: 100%;
+}
