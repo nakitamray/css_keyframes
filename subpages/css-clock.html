@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="css/typewriter.css">
+    <link rel="stylesheet" type="text/css" href="css/css-clock.css">
     <link rel="stylesheet" type="text/css" href="/navbar/navbar.css">
 
-    <title>TypeWriter Effect</title>
+    <title>CSS Clock</title>
 </head>
 <body>
     
@@ -21,13 +21,13 @@
         </div class = "pages">
             <ul class = "nav-links">
                 <li class = "nav_item">
-                    <a href = "typewriter.html" class = "nav_link" class="activepage">Typewriter Effect</a>
+                    <a href = "typewriter.html" class = "nav_link">Typewriter Effect</a>
                 </li>
                 <li class = "nav_item">
                     <a href = "glitcheffect.html" class = "nav_link">Glitch Effect</a>
                 </li>
                 <li class = "nav_item">
-                    <a href = "css-clock.html" class = "nav_link">CSS Clock</a>
+                    <a href = "css-clock.html" class = "nav_link" class="activepage">CSS Clock</a>
                 </li>
                 <li class = "nav_item">
                     <a href = "#" class = "nav_link">#Contact</a>
@@ -41,20 +41,18 @@
         </div>
     </nav>
 
-    <!-- Section Encasing typewriter effect -->
-    <div class = "typewriter">
-        <div class = "wrapper">
-            <div class = "static-txt">I am</div>
-            <ul class = "dynamic-txts">
-                <li><span>a Student</span></li>
-                <li><span>a Women</span></li>
-                <li><span>a Thinker</span></li>
-                <li><span>a Developer</span></li>
-                <li><span>a Programmer</span></li>
-                <li id = "name"><span>Nakita Ray</span></li>
-            </ul>
-        </div>
-    </div>
+    <!-- Clock Source Code -->
+    <div class="clock">
+        <div class="top"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="shadow"></div>
+        <div class="hour"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+    </div> 
 
     <script src="/navbar/navbar.js"></script>
 </body>
