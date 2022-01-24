@@ -37,7 +37,7 @@ nav {
     text-transform: uppercase;
 }
 .nav-links a{
-    color: #AAD8D3;
+    color: #b8ebe5;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -153,7 +153,7 @@ nav a {
 nav a:after{
     content: "";
     position: absolute;
-    background-color: rgb(208, 238, 255);
+    background-color: rgb(227, 243, 253);
     height: 0.10vw;
     width: 100%;
     left: 0;
