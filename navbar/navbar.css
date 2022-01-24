@@ -144,13 +144,13 @@ nav a.activepage {
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-a {
+nav a {
     position: relative;
     text-decoration: none;
     padding: 0 10px;
 }
 
-a:after{
+nav a:after{
     content: "";
     position: absolute;
     background-color: rgb(208, 238, 255);
@@ -162,10 +162,10 @@ a:after{
     transition: 0.3s;
 }
 
-a:hover{
+nav a:hover{
     color: #00cbd6;
 }
 
-a:hover:after{
+nav a:hover:after{
     width: 100%;
 }
