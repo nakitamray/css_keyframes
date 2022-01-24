@@ -106,14 +106,14 @@ img {
 		color: white;
         font-size: 3rem;
         font-weight: 100;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: 'poppins', sans-serif;
 	}
 }
 @keyframes text_reveal_name {
 	100% {
 		color: crimson;
-        font-family: "Great Vibes";
-        font-size: 5rem;
+        font-family: 'Neonderthaw', cursive;
+        font-size: 4rem;
 	}
 }
 /* End Keyframes */
