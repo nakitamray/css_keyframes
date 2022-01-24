@@ -23,7 +23,7 @@ img {
 
 
 /* Hero Section */
-#hero {
+.container-snap {
 	background-image: url(/images/landscape.jpg);
 	background-size: cover;
 	background-position: top center;
@@ -128,4 +128,26 @@ img {
 	}
 	/* End Hero */
 
+}
+
+.container-snap {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(65, 65, 65);
+    z-index: 2;
+    height: 92vh;
+    flex-basis: 40%;
+}
+
+#hero {
+    flex-basis: 60%;
+    padding-left: 8vw;
 }
