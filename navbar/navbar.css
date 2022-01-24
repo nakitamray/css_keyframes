@@ -52,7 +52,7 @@ nav a:hover:not(.activepage) {
   }
   
 /* indicate active page on nav */
-nav a.activepage {
+nav .activepage {
     color: #00cbd6;
   }
 
