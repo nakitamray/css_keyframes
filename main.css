@@ -137,7 +137,7 @@ img {
 }
 
 #hero {
-    flex-basis: 60%;
+    flex-basis: 54%;
     padding-left: 8vw;
 }
 
@@ -146,14 +146,17 @@ img {
     justify-content: left;
     align-items: center;
     color: white;
-    background-color: rgb(65, 65, 65);
     z-index: 2;
     height: 92vh;
-    flex-basis: 40%;
+    flex-basis: 45%;
 }
 
 #intro p {
-    background-color: blue;
-    height: 13vw;
+    font-family: 'poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.575);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.349);
     width: 32vw;
+    padding: 2vw;
+    border-radius: 30px;
 }
