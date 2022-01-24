@@ -10,69 +10,43 @@
 
     <title>Solar Eclipse</title>
 
-    <style>
-    html {
-        box-sizing: border-box;
-    }
-    *, *::after, *::before {
-        box-sizing: inherit;
-    }
-
-    html, body {
-        height: 100%;
-    }
-
-    body {
-        display: flex;
-        justify-content: center;
-        background-image: linear-gradient(20deg, #182c51, #09191e);
-        align-items: center;
-        overflow: hidden;
-    }
-
-    .moon {
-        background-image: linear-gradient(30deg, #13223f, #0e1a30);
-        width: 256px;
-        height: 256px;
-        border-radius: 50%;
-        position: relative;
-    }
-
-    .moon::before {
-        content: '';
-        background-color: #C7938B;
-        position: absolute;
-        display: block;
-        height: 100%;
-        width: 100%;
-        border-radius: 50%;
-        z-index: -1;
-        animation: 3.2s cresent linear infinite alternate;
-    }
-
-    @keyframes cresent {
-        0% {
-            transform: translate(-30px, 30px) scale(0.9);
-            box-shadow: none;
-        }
-
-        50% {
-            transform: translate(0px, 0px) scale(1.02);
-            box-shadow: 0 0 10px #f9f3f2, 0 0 80px 8px #C7938B;
-            background-color: #efdbd8;
-        }
-
-        100% {
-            transform: translate(30px, -30px) scale(0.9);
-            box-shadow: none;
-        }
-    }
-        </style>
 </head>
 <body>
 
+    <nav>
+        <div class="logo">
+            <h4>
+                <a href="/main.html">CSS Keyframes</a>
+            </h4>
+        </div>
+        </div class = "pages">
+            <ul class = "nav-links">
+                <li class = "nav_item">
+                    <a href = "typewriter.html" class = "nav_link" class="activepage">Typewriter Effect</a>
+                </li>
+                <li class = "nav_item">
+                    <a href = "glitcheffect.html" class = "nav_link">Glitch Effect</a>
+                </li>
+                <li class = "nav_item">
+                    <a href = "css-clock.html" class = "nav_link">CSS Clock</a>
+                </li>
+                <li class = "nav_item">
+                    <a href = "solareclipse.html" class = "nav_link">Solar Eclipse</a>
+                </li>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class = "solar-content">
+        <div class = "moon"></div>
+    </div>
     
-    <div class = "moon"></div>
+
     <script src="/navbar/navbar.js"></script>
 </body>
 </html>
