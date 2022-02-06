@@ -1,11 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Neonderthaw&family=Playfair+Display&family=Poppins&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: linear-gradient(#FFFEE8, black);
-}
+@keyframes sunrise {
+    from {
+      transform: rotate(-45deg);
+    }
+  
+    to {
+      transform: rotate(315deg);
+    }
+  }
+  
+  @keyframes moonrise {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  
+  @keyframes dawn {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes noon {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes dusk {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes midnight {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+  }
+  
+  .content_suncycle {
+    --animation-speed: 40s;
+    background-color: rgb(37, 29, 24);
+    width: 100vw;
+    height: 92vh;
+  }
+  
+  .sky {
+    width: 100vw;
+    height: 100vh;
+    top: 8vh;
+    left: 0;
+    max-height: 92vh;
+    overflow: hidden;
+  }
+  
+  .sky__phase {
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    height: 92vh;
+    width: 100%;
+    transition: opacity 0.2s;
+  }
+  
+  .sky__dawn {
+    background: linear-gradient(
+      0deg,
+      rgba(254, 215, 102, 1) 0%,
+      rgba(205, 237, 246, 1) 100%
+    );
+    animation: linear dawn infinite var(--animation-speed);
+  }
+  
+  .sky__noon {
+    background: linear-gradient(
+      0deg,
+      rgba(205, 237, 246, 1) 0%,
+      rgba(36, 123, 160, 1) 100%
+    );
+    animation: linear noon infinite var(--animation-speed);
+  }
+  
+  .sky__dusk {
+    background: linear-gradient(
+      0deg,
+      rgba(255, 32, 110, 1) 0%,
+      rgba(10, 0, 94, 1) 100%
+    );
+    animation: linear dusk infinite var(--animation-speed);
+  }
+  
+  .sky__midnight {
+    background: linear-gradient(
+      0deg,
+      rgba(2, 0, 20, 1) 0%,
+      rgba(10, 0, 94, 1) 100%
+    );
+    animation: linear midnight infinite var(--animation-speed);
+  }
+  
+  .orbit {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    margin: 200px auto;
+    transform: rotate(-45deg);
+    animation: linear sunrise infinite var(--animation-speed);
+  }
+  
+  @media (min-width: 100vw) {
+    .sky {
+      max-height: 92vh;
+    }
+    .orbit {
+        width: 60vw;
+        height: 60vw;
+        margin: 500px auto;
+    }
+  }
+  
+  @media (min-width: 100vw) {
+    .content_suncycle {
+      --animation-speed: 40s;
+    }
+    .orbit {
+      width: 60vw;
+      height: 60vw;
+      margin: 500px auto;
+    }
+  }
+  
+  .sun {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 6vw;
+    height: 6vw;
+    background-color: rgb(254, 215, 102);
+    border-radius: 50%;
+    box-shadow: 0 0 14px 14px rgba(254, 215, 102, 0.2);
+  }
+  
+  .moon {
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.2);
+  }
