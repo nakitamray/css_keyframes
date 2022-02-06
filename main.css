@@ -157,6 +157,6 @@ img {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.349);
     width: 32vw;
-    padding: 2vw;
+    padding: 2vw 2vw 1vw 2vw;
     border-radius: 30px;
 }
