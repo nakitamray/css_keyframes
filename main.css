@@ -238,7 +238,7 @@ img {
 	padding: 1vw;
 	border: 3px solid rgb(252, 255, 211);
 	border-width: 2px 0 2px 0;
-	animation: about-name 1s linear 4s 1 normal forwards;
+	animation: about-name 8s linear 4s 1 normal forwards;
 }
 
 @keyframes about-name {
@@ -257,15 +257,21 @@ img {
 		overflow: hidden;
 	}
 
-	100% {
+	25% {
 		padding: 0;
-		border: 1.5px solid rgb(252, 255, 211);
+		border: 1px solid rgb(252, 255, 211);
 		border-left: none;
 		border-right: none;
 		height: 0vw;
+		width: 16.8vw;
 		content: none;
 		display: flex;
 		overflow: hidden;
+		transform: rotate(0deg);
+	}
+
+	20% {
+		transform: rotate(90deg);
 	}
 }
 
